@@ -7,14 +7,14 @@
 # FUNCTIONS
 # ---------------------------------------------------------------------------------
 
-for f in bin/*
+for f in /boss/bin/*
 do source $f
 done
 
 # COMMANDS
 # ---------------------------------------------------------------------------------
 
-  if [[  $1 == 'build'  ]];   then boss_build $@
+  if [[  $1 == 'build'  ]];   then boss_build
 elif [[  $1 == 'start'  ]];   then boss_start $@
 elif [[  $1 == 'reload'  ]];  then boss_reload $@
 elif [[  $1 == 'status'  ]];  then boss_status $@

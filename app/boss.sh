@@ -130,7 +130,7 @@ boss_response() {
 boss_false() {
   header 'Content-Type' 'text/html'
   boss_header
-	cat www/404.html
+	cat public/404.html
 }
 
 # Done!

@@ -13,9 +13,8 @@ boss_build() {
 	rm -rf /var/lib/apt/lists/*
 
 	mkdir -p /tmp/nginx/client-body
-	mkdir -p /etc/nginx/conf.d
-
 	sed -i 's|#!/bin/sh|#!/bin/bash|g' /boss/boss.sh
+
 	ln -sf /boss/boss.sh /usr/bin/boss
 	chmod +x /usr/bin/boss
 }
